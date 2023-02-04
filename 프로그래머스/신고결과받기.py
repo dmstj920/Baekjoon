@@ -1,7 +1,6 @@
 from collections import defaultdict
 
 def solution(id_list, report, k):
-    
     reportHash = defaultdict(set)
     stopHash = defaultdict(int)
     
