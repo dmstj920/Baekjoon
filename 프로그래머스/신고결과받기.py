@@ -7,10 +7,13 @@ def solution(id_list, report, k):
     for i in report:
         reportString = i.split()
         reportHash[reportString[0]].add(reportString[1])
+        stopHash[reportString[1]] += 1
     
+    """
     for key in reportHash.keys():
         for j in reportHash.get(key):
             stopHash[j] += 1
+    """
         
     answer = []
     for name in id_list:
